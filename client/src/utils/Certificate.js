@@ -41,7 +41,7 @@ export const UpdateCertificate = async (newCertificate) => {
 };
 
 export const AuthCertificate = async (controller, uid) => {
-  const { data } = await axios.get(`/api/certificate/verify/${uid}`, {
+  const { data } = await axios.post(`/api/certificate/verify/${uid}`, {
     signal: controller.signal,
   });
 

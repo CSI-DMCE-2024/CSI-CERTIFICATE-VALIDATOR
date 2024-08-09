@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.508c8f0a.css",
-    "main.js": "/static/js/main.783510b5.js",
+    "main.js": "/static/js/main.6c5030eb.js",
     "static/media/certificate.png": "/static/media/certificate.0f8945e584273b68b4f4.png",
     "static/media/csi_logo-bgn.png": "/static/media/csi_logo-bgn.7e33c6c2eb13925a40ce.png",
     "index.html": "/index.html",
     "main.508c8f0a.css.map": "/static/css/main.508c8f0a.css.map",
-    "main.783510b5.js.map": "/static/js/main.783510b5.js.map"
+    "main.6c5030eb.js.map": "/static/js/main.6c5030eb.js.map"
   },
   "entrypoints": [
     "static/css/main.508c8f0a.css",
-    "static/js/main.783510b5.js"
+    "static/js/main.6c5030eb.js"
   ]
 }
