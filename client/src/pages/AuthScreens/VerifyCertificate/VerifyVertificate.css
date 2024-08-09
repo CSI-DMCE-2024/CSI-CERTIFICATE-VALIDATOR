@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&display=swap");
+
+.verify-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000122;
+}
+
+.verify-home .container {
+  width: 90vw;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.verify-home .container h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+.verify-home .container .form-group {
+  margin-bottom: 20px;
+}
+
+.verify-home .container button {
+  padding: 10px;
+  border-radius: 14px;
+  border: none;
+  background-color: #00309a;
+  color: white;
+  font-size: 18px;
+  border: 1px solid #00309a;
+}
+
+.verify-home .container button:hover {
+  color: #001f6d;
+  background-color: #fff;
+}
+
+/*  */
+
+.auth-certi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000122;
+  /* background-color: white; */
+}
+
+.auth-certi .certificate {
+  width: 90vw;
+  max-width: 1000px;
+  background-color: #fff;
+  /* border-radius: 14px; */
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+  position: relative;
+}
+
+.auth-certi .certificate #title {
+  position: absolute;
+  top: 17%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  color: #000;
+  text-transform: capitalize;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.auth-certi .certificate #name {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.4em;
+  font-weight: 600;
+  color: #000;
+  text-transform: capitalize;
+  white-space: nowrap;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.auth-certi .certificate #desc {
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  color: #000;
+  font-size: 1.1em;
+  width: 70%;
+  text-align: center;
+}
+
+.auth-certi .certificate #uid {
+  position: absolute;
+  bottom: 0.5%;
+  right: 2%;
+  font-weight: 500;
+  color: #000;
+  font-size: 0.8em;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.auth-certi .certificate #qr_code_id {
+  position: absolute;
+  bottom: 10%;
+  right: 8%;
+  width: 8vw;
+  min-width: 35px;
+  max-width: 150px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #c49a52 solid 3px;
+  padding: 0.4rem;
+}
+
+.auth-certi .certificate #position-tag {
+  position: absolute;
+  transform: translate(-50%, -46%);
+  top: 70%;
+  left: 49.8%;
+  font-size: 2.8vw;
+  color: #c99b40;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: capitalize;
+  white-space: nowrap;
+  text-align: center;
+  opacity: 0.7;
+}
+
+@media (max-width: 1000px) {
+  .auth-certi .certificate #desc {
+    font-size: 0.8em;
+    width: 85%;
+  }
+}
+@media (max-width: 768px) {
+  .auth-certi .certificate #name {
+    font-size: 2em;
+  }
+  .auth-certi .certificate #desc {
+    font-size: 0.7em;
+    width: 80%;
+  }
+  .auth-certi .certificate #uid {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 580px) {
+  .auth-certi .certificate {
+  }
+  .auth-certi .certificate #name {
+    font-size: 1.3em;
+  }
+  .auth-certi .certificate #desc {
+    width: 88%;
+    font-size: 0.5em;
+    top: 54%;
+  }
+  .auth-certi .certificate #uid {
+    font-size: 0.4em;
+  }
+  .auth-certi .certificate #position-tag {
+    position: absolute;
+    transform: translate(-50%, -47%);
+    top: 70.5%;
+    font-size: 3.7vw;
+  }
+  .auth-certi .certificate #qr_code_id {
+    right: 7.6%;
+    border: #c49a52 solid 1.5px;
+    padding: 0.15rem;
+  }
+}

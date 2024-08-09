@@ -1,0 +1,114 @@
+.MuiAccordion-root {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 16px !important;
+  margin-bottom: 10px;
+}
+
+.MuiAccordion-root .title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* .css-1c35hjw-MuiPaper-root-MuiAccordion-root::before {
+    display: none;
+} */
+
+.MuiPaper-root.Mui-expanded .title {
+  margin-left: 1.3rem;
+  transform: scale(1.6);
+}
+
+.dashboard .accordion-details .folder-cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  border-radius: 16px;
+  position: relative;
+}
+
+.dashboard .accordion-details .folder-cover .more-icon {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 1.5rem;
+  color: #2380dc;
+  transition: all 0.3s ease-in-out;
+  display: none;
+  background-color: white;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  padding: 0.2rem;
+}
+
+.dashboard .accordion-details .folder-cover:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+.dashboard .accordion-details .folder-cover:hover > .more-icon {
+  display: block;
+}
+
+.dashboard .accordion-details .folder-cover .folder-icon {
+  font-size: 5rem;
+  color: #45a2ff;
+}
+
+.dashboard .accordion-details a {
+  text-decoration: none;
+}
+
+.dashboard .accordion-details-item-title {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.event-modal {
+  background-color: #fff;
+  padding: 1.4rem;
+  border-radius: 18px;
+  box-shadow: inset;
+}
+
+.dashboard .acc-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.733);
+  border-radius: 10px;
+  position: absolute;
+  top: min(5.5vh, 45px);
+  right: -23%;
+  width: 70px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard .acc-menu button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin: 0;
+  font-size: 0.8rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.dashboard .acc-menu button:hover {
+  background-color: #2380dc;
+}
+
+.dashboard .acc-menu button:nth-child(2):hover {
+  background-color: red;
+}

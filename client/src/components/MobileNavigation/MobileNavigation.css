@@ -1,0 +1,44 @@
+.mobileNav .navs a {
+    display: flex;
+    padding: 12px 20px;
+    align-items: center;
+    justify-content: start;
+    text-transform: capitalize;
+    min-height: fit-content;
+    width: 100%;
+    max-width: none;
+}
+
+.navs a.active {
+
+    background-color: rgba(25, 118, 210, 0.06);
+}
+
+.MuiButtonBase-root.Mui-selected {
+    background-color: rgba(25, 118, 210, 0.06);
+}
+
+.navs a:hover {
+    background-color: rgba(25, 118, 210, 0.03);
+}
+
+.navs .MuiTabs-indicator {
+    width: 3px;
+}
+
+.mobileNav {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100vh;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mobileNav.active {
+    transform: translateX(0);
+}
